@@ -2,8 +2,8 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title>EtherSearch</title>
+    <meta charset="utf-8">
+    <title>EtherSearch</title>
 </head>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/progress.js"></script>
@@ -12,82 +12,77 @@
 <script src="js/main.js"></script>
 
 <body>
-  <div class="ui main container">
-    <h1 class="ui header">
+    <div class="ui main container">
+        <h1 class="ui header">
       <i class="eye icon"></i>
       <div class="content">
         EtherSearch
         <div class="sub header">Search Ethereum addresses in bulk.</div>
       </div>
     </h1>
-    <div class="ui stackable two column grid">
-      <div class="column">
-        <div class="item">
-          <div class="content">
-            <h4 class="ui top attached header">Bulk check address</h4>
-            <div class="ui attached segment">
-              <div class="ui form">
-                <div class="field">
-                  <label>Ether addresses</label>
-                  <textarea rows="10" id="addr"></textarea>
-                </div>
-                <button class="ui button" onclick="conslist()">Check</button>
+        <div class="ui stackable two column grid">
+            <div class="column">
+                <div class="item">
+                    <div class="content">
+                        <h4 class="ui top attached header">Bulk check address</h4>
+                        <div class="ui attached segment">
+                            <div class="ui form">
+                                <div class="field">
+                                    <label>Ether addresses</label>
+                                    <textarea rows="10" id="addr"></textarea>
+                                </div>
+                                <button class="ui button" onclick="conslist()">Check</button>
 
-                <span class="ui bottom right attached label">Powered by <a href="https://ethplorer.io">Ethplorer.io</a></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="column">
-        <div class="item">
-          <div class="content">
-            <h4 class="ui top attached header">Results</h4>
-            <div class="ui attached segment">
-              <div id="progress">
-              </div>
-              <br>
-              <div class="ui list" id="addresslist">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="column">
-        <div class="ui segment">
-          <h4 class="ui dividing header">Support<a class="anchor" id="content"></a></h4>
-          <div class="ui list">
-            <div class="item">
-              <div class="ui mini fluid labeled input">
-                <div class="ui label">
-                  BTC
+                                <span class="ui bottom right attached label">Powered by <a href="https://ethplorer.io">Ethplorer.io</a></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <input type="text" disabled placeholder="1Jppnj3qtk3iJVfTDkKHsEfpTDj4uGUKSW">
-              </div>
-            </div>
-            <div class="item">
-              <div class="ui mini fluid labeled input">
-                <div class="ui label">
-                  ETH
+                <div class="ui segment">
+                    <h4 class="ui dividing header">Support<a class="anchor" id="content"></a></h4>
+                    <div class="ui list">
+                        <div class="item">
+                            <div class="ui mini fluid labeled input">
+                                <div class="ui label">
+                                    BTC
+                                </div>
+                                <input type="text" disabled placeholder="1Jppnj3qtk3iJVfTDkKHsEfpTDj4uGUKSW" value="1Jppnj3qtk3iJVfTDkKHsEfpTDj4uGUKSW">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="ui mini fluid labeled input">
+                                <div class="ui label">
+                                    ETH
+                                </div>
+                                <input type="text" disabled placeholder="0xbF835D1E83a53ca0e6CEed0b1e30b9915ACb6165" value="0xbF835D1E83a53ca0e6CEed0b1e30b9915ACb6165">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="ui mini fluid labeled input">
+                                <div class="ui label">
+                                    LTC
+                                </div>
+                                <input type="text" disabled placeholder="LVM6usD1F3YAhyrLVCvTAMGv8LZg3gf2iw" value="LVM6usD1F3YAhyrLVCvTAMGv8LZg3gf2iw">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <input type="text" disabled placeholder="0xbF835D1E83a53ca0e6CEed0b1e30b9915ACb6165">
-              </div>
             </div>
-            <div class="item">
-              <div class="ui mini fluid labeled input">
-                <div class="ui label">
-                  LTC
+            <div class="column">
+                <div class="item">
+                    <div class="content">
+                        <h4 class="ui top attached header">Results</h4>
+                        <div class="ui attached segment">
+                            <div id="progress">
+                            </div>
+                            <br>
+                            <div class="ui list" id="addresslist">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <input type="text" disabled placeholder="LVM6usD1F3YAhyrLVCvTAMGv8LZg3gf2iw">
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-
-  </div>
-  </div>
 </body>
-
 </html>
